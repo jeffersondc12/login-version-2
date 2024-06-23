@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .header, .cta {
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .header p {
+            font-size: 1.2em;
+        }
+        .cta button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            cursor: pointer;
+        }
+        .cta button:hover {
+            background-color: #0056b3;
+        }
+        .testimonials, .form-container {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Get Your Free eBook</h1>
+            <p>Learn the secrets to success with our free guide.</p>
+        </div>
+        <div class="hero">
+            <img src="ebook-cover.jpg" alt="eBook Cover" style="width: 100%; max-width: 600px;">
+        </div>
+        <div class="benefits">
+            <h2>Why You'll Love This eBook</h2>
+            <ul>
+                <li>Proven strategies for growth</li>
+                <li>Expert tips and advice</li>
+                <li>Easy to follow guidelines</li>
+            </ul>
+        </div>
+        <div class="testimonials">
+            <h2>What Others Are Saying</h2>
+            <p>"This eBook changed my life!" - Jane Doe</p>
+            <p>"A must-read for anyone looking to improve." - John Smith</p>
+        </div>
+        <div class="cta">
+            <button onclick="document.getElementById('form-container').scrollIntoView();">Download Now</button>
+        </div>
+        <div class="form-container" id="form-container">
+            <h2>Sign Up to Get Your Free eBook</h2>
+            <form>
+                <input type="text" placeholder="Name" required><br><br>
+                <input type="email" placeholder="Email" required><br><br>
+                <button type="submit">Get eBook</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

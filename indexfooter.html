@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#main-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+</style>
+<body>
+  <footer id="main-footer">
+    <div class="container">
+      <p>&copy; 2024 Example Footer. All rights reserved.</p>
+      <button id="changeColorButton">Change Color</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+  <script>document.getElementById("changeColorButton").addEventListener("click", function() {
+    var footer = document.getElementById("main-footer");
+    var currentColor = footer.style.backgroundColor;
+  
+    if (currentColor === "rgb(51, 51, 51)") {
+      footer.style.backgroundColor = "#ff6347"; // Change to red
+    } else {
+      footer.style.backgroundColor = "#333"; // Change back to original color
+    }
+  });
+</script>  
+</body>
+</html>
